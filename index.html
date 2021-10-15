@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Festive&family=Roboto&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Jacke's Oberoi</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="about">
+            <h2>Jacke's Oberoi</h2>
+            <div class="topabt">
+                <span>
+                    <a href="https://www.youtube.com/channel/UCuZrmBV5zgpbD5uTWNFUV9g/featured" target="_blank" rel="noopener noreferrer">🎵Music Artist🎵</a>
+                    
+                </span>
+            </div>
+        </div>
+        <div class="blob">
+            <img src="jacke.svg" alt="me">
+        </div>
+
+    </div>
+    <!-- <img src="waveinv.svg" alt=""> -->
+    <div class="divider"></div>
+    <div class="container ">
+        <div class="main_about">
+            <h2>
+                About Me
+            </h2>
+            <div class="aboutText">
+                <div class="info">
+                    <i class="material-icons">person</i>
+                    Rishu Rishav
+                </div>
+                <div class="info">
+                    <i class="material-icons">home</i>
+                    Bihar
+                </div>
+                <div class="info">
+                    <i class="material-icons">filter_vintage</i>
+                    Music Developer
+                </div>
+            
+            </div>
+        </div>
+    </div>
+    
+    <div class="fixed-action-btn toolbar">
+        <a class="btn-floating btn-large red">
+        <i class="large material-icons">music_note</i>
+        </a>
+        <ul>
+            <li>
+                <a class="btn-floating red">
+                    <i class="material-icons">home</i>
+                </a>
+            </li>
+            <li>
+                <a class="btn-floating  darken-1">
+                    <i class="material-icons">contact_mail</i>
+                </a>
+            </li>
+            <li>
+                <a class="btn-floating ">
+                    <i class="material-icons">library_music</i>
+                </a>
+            </li>
+            <li>
+                <a class="btn-floating ">
+                    <i class="material-icons">image</i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+    <!-- <img id="divider" src="waveinv.svg" alt="divider"> -->
+    
+    
+        
+        
+        
+    <div class="slider">
+        <ul class="slides">
+          <li>
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/HHSgwiz-aPY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </li>
+          <li>
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/8pf_DLlGau4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </li>
+          <li>
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/nIgZXUI1haU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </li>
+          <li>
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/asQieGZpY8c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </li>
+        </ul>
+      </div>
+        
+        
+      
+    
+    <img id="divider" src="waveinv.svg" alt="divider">
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.fixed-action-btn');
+    var instances = M.FloatingActionButton.init(elems, {
+      direction: 'top',
+    //   hoverEnabled: false
+      toolbarEnabled: true
+    });
+    });
+    // document.addEventListener('DOMContentLoaded', function() {
+    //     var elems = document.querySelectorAll('.carousel');
+    //     var instances = M.Carousel.init(elems, {
+    //         // fullWidth: true,
+    //         indicators: true
+    //     });
+    // });
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.slider');
+        var instances = M.Slider.init(elems, {
+            indicator:true
+        });
+    });
+        M.AutoInit();
+    </script>
+</body>
+
+</html>
