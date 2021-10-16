@@ -53,6 +53,7 @@ body {
 }
 .blob img{
     width: 17em;
+    z-index: 3;
     transition: all .5s ease-in-out;
 }
 .aboutText{
