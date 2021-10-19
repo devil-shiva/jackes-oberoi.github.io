@@ -10,25 +10,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Festive&family=Roboto&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Jake's Oberoi</title>
 </head>
 
 <body>
     <div class="container">
         <div class="about">
-            <h2>Jake's Oberoi</h2>
-            <div class="topabt">
+            <h2 data-aos="fade-right" data-aos-duration="1000">Jake's Oberoi</h2>
+            <div class="topabt" data-aos="fade-left" data-aos-duration="1000">
                 <span>
                     <a href="https://www.youtube.com/channel/UCuZrmBV5zgpbD5uTWNFUV9g/featured" target="_blank" rel="noopener noreferrer">🎵Music Artist🎵</a>
                     
                 </span>
             </div>
         </div>
-        <div class="blob">
-            <img src="./img1.png" alt="me">
+        <div data-aos="zoom-in" data-aos-duration="1500" class="blob">
+            <img data-aos="zoom-out" data-aos-duration="2000" src="./img1.png" alt="me">
         </div>
 
     </div>
@@ -36,23 +38,16 @@
     <div class="divider"></div>
     <div class="container ">
         <div class="main_about">
-            <h2>
-                About Me
-            </h2>
-            <div class="aboutText">
-                <div class="info">
-                    <i class="material-icons">person</i>
-                    Rishu Rishav
-                </div>
-                <div class="info">
-                    <i class="material-icons">home</i>
-                    Bihar
-                </div>
-                <div class="info">
-                    <i class="material-icons">filter_vintage</i>
-                    Music Developer
-                </div>
-            
+            <h3 data-aos="fade-right" data-aos-duration="1000">
+                Music Strings
+            </h3>
+            <div class="aboutText" data-aos="fade-right" data-aos-duration="1000">
+                Jake's Oberoi, <br>
+                Kisi kaam ko anjaam dun to lage darr bhot,
+                Jaise bhoot khada saamne aur main ek darpok,
+                Phir bhi haarna na seekha kyunki jigar bhi bhot,
+                BIHAR ka hun SHER, shikaar ka hi shauk.
+                            
             </div>
         </div>
     </div>
@@ -63,7 +58,7 @@
         </a>
         <ul>
             <li>
-                <a class="btn-floating red">
+                <a class="btn-floating red" href="/">
                     <i class="material-icons">home</i>
                 </a>
             </li>
@@ -73,12 +68,12 @@
                 </a>
             </li>
             <li>
-                <a class="btn-floating ">
+                <a class="btn-floating" href="#playlist">
                     <i class="material-icons">library_music</i>
                 </a>
             </li>
             <li>
-                <a class="btn-floating ">
+                <a class="btn-floating " href="#gallery">
                     <i class="material-icons">image</i>
                 </a>
             </li>
@@ -86,58 +81,79 @@
     </div>
 
 
-    <img id="divider" src="./waveinv.svg" alt="divider">
+    <img data-aos="fade-down" data-aos-duration="1000" id="divider" src="./waveinv.svg" alt="divider">
     
     
         
-        
-        
-    <div class="slider">
-        <ul class="slides">
-          <li>
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/HHSgwiz-aPY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </li>
-          <li>
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/8pf_DLlGau4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </li>
-          <li>
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/nIgZXUI1haU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </li>
-          <li>
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/asQieGZpY8c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </li>
-        </ul>
-      </div>
-        
-        
-      
     
-    <img id="divider" src="waveinv.svg" alt="divider">
+    
+    <div class="container playlists">
+        <h3 id="playlist" data-aos="fade-right" data-aos-duration="1000">PlayList</h3>
+        
+        <div class="collection">
+            <a data-aos="fade-right" data-aos-duration="1000" href="#modal1" class="collection-item modal-trigger">RAPE(A NIGTHMARE)</a>
+            <a data-aos="fade-right" data-aos-duration="1000" href="#modal2" class="collection-item modal-trigger">FANTASY</a>
+            <a data-aos="fade-right" data-aos-duration="1000" href="#modal3" class="collection-item modal-trigger">USAK HI BANA</a>
+            <a data-aos="fade-right" data-aos-duration="1000" href="#modal4" class="collection-item modal-trigger">AWAARA SHAAM</a>
+        </div>
+            
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/8pf_DLlGau4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="modal-footer">
+              <a href="https://www.youtube.com/channel/UCuZrmBV5zgpbD5uTWNFUV9g" class="btn modal-close waves-effect waves-red btn-flat red accent-4">Subscribe</a>
+            </div>
+          </div>
+        <div id="modal2" class="modal">
+            <div class="modal-content">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/HHSgwiz-aPY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="modal-footer">
+              <a href="https://www.youtube.com/channel/UCuZrmBV5zgpbD5uTWNFUV9g" class="modal-close waves-effect waves-green btn-flat red accent-4">Subscribe</a>
+            </div>
+          </div>
+        <div id="modal3" class="modal">
+            <div class="modal-content">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/nIgZXUI1haU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="modal-footer">
+              <a href="https://www.youtube.com/channel/UCuZrmBV5zgpbD5uTWNFUV9g" class="modal-close waves-effect waves-green btn-flat red accent-4">Subscribe</a>
+            </div>
+          </div>
+        <div id="modal4" class="modal">
+            <div class="modal-content">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/asQieGZpY8c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="modal-footer">
+              <a href="https://www.youtube.com/channel/UCuZrmBV5zgpbD5uTWNFUV9g" class="modal-close waves-effect waves-green btn-flat red accent-4">Subscribe</a>
+            </div>
+          </div>
+               
+                
+            
+            
+                
+            
+                
+            
+        </div>
+    </div>
 
+    <img data-aos="fade-down" data-aos-duration="1000" id="divider" src="waveinv.svg" alt="divider">
+      <div class="container">
+          <h3 id="gallery">Gallery</h3>
+          <div class="imgGallery">
+            <img data-aos="zoom-in" data-aos-duration="2000" class="materialboxed" src="mainimg.jpg" alt="">
+            <img data-aos="zoom-in" data-aos-duration="2000" class="materialboxed" src="mainimg.jpg" alt="">
+            <img data-aos="zoom-in" data-aos-duration="2000" class="materialboxed" src="mainimg.jpg" alt="">
+          </div>
+      </div>
     <script>
-    document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.fixed-action-btn');
-    var instances = M.FloatingActionButton.init(elems, {
-      direction: 'top',
-    //   hoverEnabled: false
-      toolbarEnabled: true
-    });
-    });
-    // document.addEventListener('DOMContentLoaded', function() {
-    //     var elems = document.querySelectorAll('.carousel');
-    //     var instances = M.Carousel.init(elems, {
-    //         // fullWidth: true,
-    //         indicators: true
-    //     });
-    // });
-    document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('.slider');
-        var instances = M.Slider.init(elems, {
-            indicator:true
-        });
-    });
-        M.AutoInit();
+    AOS.init();
     </script>
+    
+    <script src="main.js"></script>
 </body>
 
 </html>

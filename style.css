@@ -2,10 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: all .5s;
 }
 body {
     background-color: #e5e5f7;
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
     /* opacity: 0.8;
     background-size: 20px 20px;
     background-image:  repeating-linear-gradient(to right, #444cf7, #444cf7 1px, #e5e5f7 1px, #e5e5f7); */
@@ -74,5 +77,15 @@ body {
 .carousel-item{
     height: 2em;
 }
-  
-   
+.playlists{
+    flex-direction: column;
+}
+.collection-item {
+    width: 15em;
+    text-align: center;
+    margin: 1em !important;
+}
+
+.imgGallery img{
+    width: 20em;
+}
