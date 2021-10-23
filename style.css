@@ -74,18 +74,9 @@ body {
 #divider{
     margin-top: 4em;
 }
-.carousel-item{
-    height: 2em;
-}
+
 .playlists{
     flex-direction: column;
 }
-.collection-item {
-    width: 15em;
-    text-align: center;
-    margin: 1em !important;
-}
 
-.imgGallery img{
-    width: 20em;
-}
+

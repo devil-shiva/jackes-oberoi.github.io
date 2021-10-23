@@ -15,13 +15,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <title>Jake's Oberoi</title>
+    <title>Rishu Rishav</title>
 </head>
 
 <body>
     <div class="container">
         <div class="about">
-            <h2 data-aos="fade-right" data-aos-duration="1000">Jake's Oberoi</h2>
+            <h2 data-aos="fade-right" data-aos-duration="1000">Rishu Rishav</h2>
             <div class="topabt" data-aos="fade-left" data-aos-duration="1000">
                 <span>
                     <a href="https://www.youtube.com/channel/UCuZrmBV5zgpbD5uTWNFUV9g/featured" target="_blank" rel="noopener noreferrer">🎵Music Artist🎵</a>
@@ -141,13 +141,52 @@
     </div>
 
     <img data-aos="fade-down" data-aos-duration="1000" id="divider" src="waveinv.svg" alt="divider">
+    <!-- GAllery  -->
       <div class="container">
           <h3 id="gallery">Gallery</h3>
-          <div class="imgGallery">
-            <img data-aos="zoom-in" data-aos-duration="2000" class="materialboxed" src="mainimg.jpg" alt="">
-            <img data-aos="zoom-in" data-aos-duration="2000" class="materialboxed" src="mainimg.jpg" alt="">
-            <img data-aos="zoom-in" data-aos-duration="2000" class="materialboxed" src="mainimg.jpg" alt="">
-          </div>
+            <div class="carousel">
+                <a class="carousel-item" href="#one!"><img src="imgGallery/img1.jpg"></a>
+                <a class="carousel-item" href="#two!"><img src="imgGallery//img2.jpg"></a>
+                <a class="carousel-item" href="#three!"><img src="imgGallery/img3.jpg"></a>
+                <a class="carousel-item" href="#four!"><img src="imgGallery/img4.jpg"></a>
+                <a class="carousel-item" href="#five!"><img src="imgGallery/img5.jpg"></a>
+                <a class="carousel-item" href="#six!"><img src="imgGallery/img6.jpg"></a>
+                <a class="carousel-item" href="#seven!"><img src="imgGallery/img7.jpg"></a>
+                <a class="carousel-item" href="#eight!"><img src="imgGallery/img8.jpg"></a>
+                <a class="carousel-item" href="#nine!"><img src="imgGallery/img9.jpg"></a>
+                <a class="carousel-item" href="#ten!"><img src="imgGallery/img10.jpg"></a>
+            </div>
+      </div>
+      <img data-aos="fade-down" data-aos-duration="1000" id="divider" src="waveinv.svg" alt="divider">
+
+      <div class="container">
+          
+        <div class="row">
+            <div class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                    <input placeholder="Name" id="first_name" type="text" class="validate" required>
+                    <label for="first_name">First Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                    <input id="last_name" type="text" class="validate" required>
+                    <label for="last_name" >Last Name</label>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">mode_edit</i>
+                        <textarea id="icon_prefix2" class="materialize-textarea" required></textarea>
+                        <label for="icon_prefix2">Message</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <a class="btn-floating btn-large waves-effect waves-light green" id="sendMsg"><i class="material-icons">send</i></a>
+                </div>
+            </div>
+        </div>
+        
       </div>
     <script>
     AOS.init();
